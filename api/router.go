@@ -18,6 +18,8 @@ func BindRouting(router *gin.Engine) {
 		v1.POST("/post", demo.Postting)
 		v1.GET("/user", dbaccess.GetUser)
 		v1.GET("/deposit", fixme.GetDepostit)
+		v1.POST("/user/create", dbaccess.Create)
+		v1.POST("/user/delete", dbaccess.Delete)
 	}
 
 }
